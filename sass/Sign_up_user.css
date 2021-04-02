@@ -1,0 +1,56 @@
+.container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  width: 500px;
+  background-color: sandybrown;
+  border-radius: 5%;
+}
+
+.login-form h1, .login-form h3 {
+  text-align: center;
+}
+
+.login-form input[type='text'], .login-form input[type='password'], .login-form input[type='email'] {
+  outline: none;
+  margin: 25px;
+  border-radius: 3px;
+  border: 1px solid black;
+  display: block;
+  padding: 15px;
+  width: 300px;
+}
+
+.login-form input[type='submit'] {
+  padding-left: 50px;
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: slategrey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form input[type='submit']:hover {
+  background-color: steelblue;
+}
+/*# sourceMappingURL=Sign_up_user.css.map */
