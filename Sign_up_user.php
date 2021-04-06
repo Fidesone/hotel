@@ -4,7 +4,7 @@
 
 <div class='login-form'>
     
-    <form action='login.php' method='post'>
+    <form action='register.php' method='post'>
         <h1>Sign-Up</h1>
         <h3>Introduce tus credenciales </h3>
         <input type='text' name='dni' placeholder='Introduce tu dni'>

@@ -2,11 +2,11 @@
 <?php
 
 include_once("connection.php");
-echo "La conexión ha sido exitosa" . "<br>";
+// echo "La conexión ha sido exitosa" . "<br>";
 include ("header.php");
 include ("Sign_up_user.php");
 
-echo "esto es php";
+// echo "esto es php";
 
 ?>
 

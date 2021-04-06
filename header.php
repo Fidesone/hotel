@@ -2,7 +2,7 @@
 
 <?php
 
-echo "Esto es el Header" . "<br>";
+// echo "Esto es el Header" . "<br>";
 
 
 ?>

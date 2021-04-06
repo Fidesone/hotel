@@ -1,5 +1,5 @@
 <?php
-  // Creamos la conexión a la base de datos creada
+  // Creamos la conexión a la base de datos creada (mediante PDO)
   
     $user="root";
     $pass="";
@@ -8,7 +8,7 @@
   
     
 
-    $con = new PDO("mysql:host=localhost;dbname=hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
+    $conn = new PDO("mysql:host=localhost;dbname=hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
     
     
 
