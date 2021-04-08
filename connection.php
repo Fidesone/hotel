@@ -3,12 +3,12 @@
   
     $user="root";
     $pass="";
-    $server="localhost";
+    $server="localhost:3307";
     $db= "hotel";
   
     
 
-    $conn = new PDO("mysql:host=localhost;dbname=hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
+    $conn = new PDO("mysql:host=localhost:3307;dbname=hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
     
     
 
