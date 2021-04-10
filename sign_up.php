@@ -1,89 +1,56 @@
 <?php
-
- include_once 'connection.php';
-
- session_start(); // Inicia una nueva sesión
-
- if (isset($_GET['session_closed'])){
-
-    session_unset (); // libera todas las variables de sesion actualmente registradas
-
-    session_destroy(); // Destruye la info vinculada a una sesión
-
-    header('location: index.php'); //Queremos que una vez finalizada la sesión, nos devuelva al Index.
- }
-
- // Redirige según seas un cliente o un administrador
- if (isset($_SESSION['roles'])){
-     switch($_SESSION['roles']){
-        case 1: 
-            header('location: admin.php');
-        break;
-        
-        case 2: 
-            header('location: client.php');
-        break;
-        default:
-     }
-
- }
-    if(isset($_POST['nombre']) && isset($_POST['password'])){
-        $nombre = $_POST['nombre'];
-        $password = $_POST['password'];
-
-        // $db = new Database();
-        $query= $conn->prepare('SELECT * FROM usuarios WHERE nombre = :nombre AND password = :password');
-        $query->execute([
-            'nombre'=> $nombre, 
-            'password'=> $password,
-            ]);
-
-        $result = $query->fetch(PDO::FETCH_NUM);
-        if ($result){
-            //valida rol
-            $rol = $result[6];
-            $_SESSION['roles'] = $rol;
-            switch($_SESSION['roles']){
-                case 1: 
-                    header('location: admin.php');
-                break;
-                
-                case 2: 
-                    header('location: client.php');
-                break;
-                default:
-             }
-        } else{
-            // no existe usuario o contraseña, o son incorrectos.
-        }
-    }
-
+include 'connection.php';
 ?>
 
-
 <!DOCTYPE html>
-<!-- Creación de formulario para el registro de cada usuario -->
-<div class='container-form'>
-
-<h1 id="saludo">Bienvenidos</h1>
-
-<div class='login-form'>
-    
-    <form action='#' method='post'>
-        <h1>Sign-Up</h1>
-        <h3>Introduce tus credenciales </h3>
-        <input type='text' name='dni' placeholder='Introduce tu dni'>
-        <input type='text' name='nombre' placeholder='Introduce tu nombre'>
-        <input type='text' name='primer_apellido' placeholder='Introduce tu primer apellido'>
-        <input type='text' name='segundo_apellido' placeholder='Introduce tu segundo apellido'>
-        <input type='email' name='email' placeholder='Introduce tu email'>
-        <input type='password' name='password' placeholder='Introduce tu contraseña'>
-        <input type='submit' value='Sign Up'>
-    </form>
-</div>
-
-
-
-    
-
 <html>
+<head>
+<title>Registro de usuario</title>
+</head>
+    <body>
+    <!-- El form se envia a register.php -->
+        <form action='sign_up.php'   method="post">
+            <h2>Registrate</h2>
+            <input type="text" name='nombre' placeholder='Nombre'> <br><br>
+            <!-- <input type="text" name='primer_apellido' placeholder='Primer Apellido'> <br><br>
+            <input type="text" name='segundo_apellido' placeholder='Segundo Apellido'> <br><br> -->
+            <input type="email" name='email' placeholder='Email'> <br><br>
+            <input type="password" name='password' placeholder='Contraseña'> <br><br>
+            <input type="submit" name='register'>
+        </form>
+        <p>
+        <h2>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+        <a href="login.php">Iniciar sesion</a>
+        
+
+        </p>
+    </body>
+</html>
+
+<?php
+
+//funciona en tabla hotels. cambiar campos para que funcione para hotel.
+     
+    if (!empty($_POST['nombre']) && !empty($_POST['email']) &&!empty($_POST['password'])) {
+        $query = "INSERT INTO usuarios(nombre,  email, password)VALUES (:nombre ,   :email, :password)";
+        $stmt = $conn->prepare($query);
+        $stmt->bindParam(':nombre', $_POST['nombre']);
+        // $stmt->bindParam(':primer_apellido', $_POST['primer_apellido']);
+        // $stmt->bindParam(':segundo_apellido', $_POST['segundo_apellido']);
+        $stmt->bindParam(':email', $_POST['email']);
+        $stmt->bindParam(':password', $_POST['password']);
+
+        if($stmt->execute()){
+            echo 'Usuario registrado correctamente';
+            header('location: login.php');
+        } else {
+            echo '!Ups, algo salio mal!';
+            header('location: index.php');
+        }
+
+        
+
+     } else echo 'Por favor, complete todos los campos';
+
+
+?>

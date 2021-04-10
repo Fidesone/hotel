@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <?php
 
-include_once("connection.php");
+ include_once("connection.php");
 // echo "La conexión ha sido exitosa" . "<br>";
 include ("header.php");
-include ("sign_up.php");
+include ('sign_up.php');
+
 
 // echo "esto es php";
 
