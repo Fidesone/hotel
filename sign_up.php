@@ -9,6 +9,8 @@
     session_unset (); // libera todas las variables de sesion actualmente registradas
 
     session_destroy(); // Destruye la info vinculada a una sesión
+
+    header('location: index.php'); //Queremos que una vez finalizada la sesión, nos devuelva al Index.
  }
 
  // Redirige según seas un cliente o un administrador
@@ -63,6 +65,8 @@
 <!-- Creación de formulario para el registro de cada usuario -->
 <div class='container-form'>
 
+<h1 id="saludo">Bienvenidos</h1>
+
 <div class='login-form'>
     
     <form action='#' method='post'>
@@ -77,6 +81,9 @@
         <input type='submit' value='Sign Up'>
     </form>
 </div>
-</div>
+
+
+
+    
 
 <html>

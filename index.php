@@ -4,7 +4,7 @@
 include_once("connection.php");
 // echo "La conexión ha sido exitosa" . "<br>";
 include ("header.php");
-include ("Sign_up_user.php");
+include ("sign_up.php");
 
 // echo "esto es php";
 
@@ -12,9 +12,14 @@ include ("Sign_up_user.php");
 
 <head>
 <link href="sass/header.css" rel="stylesheet" type="text/css">
-<link href="sass/Sign_up_user.css" rel="stylesheet" type="text/css">
+<link href="sass/sign_up.css" rel="stylesheet" type="text/css">
+<link href="sass/body.css" rel="stylesheet" type="text/css">
+
 </head>
 
+<body>
+<div id='container'><div>
+</body>
 
 
 </html>

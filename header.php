@@ -8,10 +8,10 @@
 ?>
 
 <div id='container'>
-    <h1>Barra de navegacion</h1>
+    <h1>Bienvenido al Hotel Andrius</h1>
     <nav>
-    <a  class='nav-link' href='#'> Inicio/Login </a>
-    <a  class='nav-link' href='rooms.php'> Habitaciones</a>
+    <a  class='nav-link' href='index.php'> Inicio </a>
+    <a  class='nav-link' href='sign_up_user.php'> Login</a>
     <a  class='nav-link' href='#'> Precio </a>
     <a  class='nav-link' href='#'> Contacto </a>
     <nav>
