@@ -18,7 +18,7 @@ include 'connection.php';
             <input type="submit" name='register'>
         </form>
         <p>
-        <h2>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+        <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
         <a href="login.php">Iniciar sesion</a>
         
 
@@ -31,6 +31,7 @@ include 'connection.php';
 //funciona en tabla hotels. cambiar campos para que funcione para hotel.
      
     if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password'])) {
+
         $query = "INSERT INTO usuarios(nombre, apellido,  email, password)VALUES (:nombre , :apellido,  :email, :password)";
         $stmt = $conn->prepare($query);
         $stmt->bindParam(':nombre', $_POST['nombre']);
@@ -48,7 +49,12 @@ include 'connection.php';
 
         
 
-     } else echo 'Por favor, complete todos los campos';
+        
+
+      
+        
+    } else echo 'Por favor, complete todos los campos';
+     
 
 
 ?>

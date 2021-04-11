@@ -4,15 +4,6 @@
 
  session_start(); // Inicia una nueva sesión
 
- if (isset($_GET['session_closed'])){
-
-    session_unset (); // libera todas las variables de sesion actualmente registradas
-
-    session_destroy(); // Destruye la info vinculada a una sesión
-
-    header('location: index.php'); //Queremos que una vez finalizada la sesión, nos devuelva al Index.
- }
-
  // Redirige según seas un cliente o un administrador
  if (isset($_SESSION['roles'])){
      switch($_SESSION['roles']){
@@ -61,21 +52,33 @@
 ?>
 
 <!DOCTYPE html>
+<html>
+<head>
+<link href="sass/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
 <!-- Creación de formulario para el registro de cada usuario -->
 <div class='container-form'>
-<div class='login-form'>
-    <form action='#' method='post'>
-        <h1>Sign-Up</h1>
-        <h3>Introduce tus credenciales </h3>
+    <div class='login-form'>
+        <form action='#' method='post'>
+            <h1>Login</h1>
+            <h3>Introduce tus credenciales </h3>
         
-        <input type='text' name='nombre' placeholder='Introduce tu nombre'>
-        <input type='password' name='password' placeholder='Introduce tu contraseña'>
-        <input type='submit' value='Sign Up'>
-    </form>
+            <input type='text' name='nombre' placeholder='Introduce tu nombre'> 
+            <input type='password' name='password' placeholder='Introduce tu contraseña'> 
+            <input type='submit' value='Sign Up'>
+            <p>
+            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+            <a href="sign_up.php">Registrate</a>
+        
+
+            </p>
+        </form>
+    
+    </div>
+
 </div>
 
-
-
     
-
+</body>
 <html>

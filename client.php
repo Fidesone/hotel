@@ -1,4 +1,15 @@
 <?php
+
+session_start();
+
+    if(!isset($_SESSION['roles'])){
+        header('location:login.php');
+    } else{
+        if($_SESSION['roles']!=2){
+        header('location:login.php');
+        }
+    }
+
 ?>
 <!DOCTYPE HTML>
 <head>
@@ -6,5 +17,6 @@
 </head>
 <body>
 <h1>Soy un cliente </h1>
+<a href='session_closed.php'>Cerrar sesión </a>
 <body>
 </HTML>
