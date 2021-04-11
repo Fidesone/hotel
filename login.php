@@ -41,7 +41,7 @@
         $result = $query->fetch(PDO::FETCH_NUM);
         if ($result){
             //valida rol
-            $rol = $result[6];
+            $rol = $result[5];
             $_SESSION['roles'] = $rol;
             switch($_SESSION['roles']){
                 case 1: 
