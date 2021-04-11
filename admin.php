@@ -16,7 +16,17 @@
 <title>admin</title>
 </head>
 <body>
-<h1>Soy un admin</h1>
-<a href='session_closed.php'>Cerrar sesión </a>
+
+<nav>
+<h1>Bienvenido Admin</h1>
+    <a  class='nav-admin' href='users.php'> Usuarios </a>
+    <a  class='nav-admin' href='sign_up.php'> Habitaciones</a>
+    <a  class='nav-admin' href='#'> Reservas </a>
+    <a  class='nav-admin' href='#'> algo mas </a>
+    <a  class='nav-admin' href='session_closed.php'>Cerrar sesión </a>
+<nav>
+
+   
+
 <body>
 </HTML>
