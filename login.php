@@ -1,6 +1,7 @@
 <?php
 
  include_once 'connection.php';
+ 
 
  session_start(); // Inicia una nueva sesión
 
