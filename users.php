@@ -50,8 +50,8 @@
             <td><?php echo $row['apellido'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td><?php echo $row['id_roles'] ?></td>
-            <td><a href="update.php?id=<?php echo $row['id']; ?>">Editar</a></td>
-            <td><a href="remove.php?id=<?php echo $row['id']; ?>">Eliminar</a></td>
+            <td><a href="update.php?upd=<?php echo $row['id']; ?>">Editar</a></td>
+            <td><a href="remove.php?upd=<?php echo $row['id']; ?>">Eliminar</a></td>
         </tr>
 
     <?php
