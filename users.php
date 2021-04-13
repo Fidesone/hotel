@@ -27,7 +27,19 @@
 
 </head>
 <body>
-    <h1>Usuarios totales</h1>
+    
+    </div>
+    <form action="insert_user.php" method="post" class="container_form">
+    <h2 class="container_newuser">Registrar nuevo usuario</h2>
+        <input type="text" name='nombre' placeholder='Nombre'> <br><br>
+        <input type="text" name='apellido' placeholder='Apellido'> <br><br>
+        <input type="email" name='email' placeholder='Email'> <br><br>
+        <input type="number" name='id_roles' placeholder='ROL'> <br><br>
+        <input type="submit" name='registrar'>
+    </form>
+
+    <div class="container_table">
+    <h2>Usuarios totales</h2>
     <table class='user_table'>
     
         <tr>
@@ -51,14 +63,15 @@
             <td><?php echo $row['apellido'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td><?php echo $row['id_roles'] ?></td>
-            <td><a href="update.php?upd=<?php echo $row['id']; ?>" class="item_link">Editar</a></td>
+            <td><a href="update.php?upd=<?php echo $row['id']; ?>">Editar</a></td>
             <td><a href="remove.php?upd=<?php echo $row['id']; ?>"class="item_link">Eliminar</a></td>
         </tr>
 
     <?php
         }
     ?>  
-    </table>         
+    </table>   
+    </div>      
             
            
                   
