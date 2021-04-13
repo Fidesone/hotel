@@ -34,7 +34,7 @@ if ($res > 0){
             <!-- <th>Operacion</th> -->
         </tr>
         <tr>
-        <input type="hidden" name='id' value="<? $data['id']?>">
+        <input type="hidden" name='id' value="<?= $data['id']?>">
         <td><input type="text" name='nombre' placeholder='nombre' value="<?= $data['nombre']?>"></td>
         <td><input type="text" name='apellido' placeholder='apellido' value="<?= $data['apellido']?>"></td>
         <td><input type="text" name='email' placeholder='email' value="<?= $data['email']?>"></td>

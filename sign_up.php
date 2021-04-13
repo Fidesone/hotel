@@ -28,7 +28,7 @@ include 'connection.php';
 
 <?php
 
-//funciona en tabla hotels. cambiar campos para que funcione para hotel.
+
      
     if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
