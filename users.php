@@ -24,6 +24,7 @@
 <html>
 <head>
 <link href="sass/users.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <h1>Usuarios totales</h1>
@@ -50,8 +51,8 @@
             <td><?php echo $row['apellido'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td><?php echo $row['id_roles'] ?></td>
-            <td><a href="update.php?upd=<?php echo $row['id']; ?>">Editar</a></td>
-            <td><a href="remove.php?upd=<?php echo $row['id']; ?>">Eliminar</a></td>
+            <td><a href="update.php?upd=<?php echo $row['id']; ?>" class="item_link">Editar</a></td>
+            <td><a href="remove.php?upd=<?php echo $row['id']; ?>"class="item_link">Eliminar</a></td>
         </tr>
 
     <?php
@@ -61,7 +62,7 @@
             
            
                   
-        
+<script src="js/confirmation.js"></script>      
 </body>
 
 </html>
