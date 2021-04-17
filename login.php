@@ -46,7 +46,7 @@
                 default:
              }
         } else{
-            // no existe usuario o contraseña, o son incorrectos.
+            echo 'no existe usuario o contraseña, o son incorrectos.' ;
         }
     }
 
