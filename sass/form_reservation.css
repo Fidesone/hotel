@@ -1,16 +1,13 @@
 .container_rooms {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: chartreuse;
 }
 
-.container_rooms .room {
+.container_rooms .room1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,8 +17,32 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 500px;
-  height: 500px;
+  border: solid black;
+}
+
+.container_rooms .room2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid black;
+}
+
+.container_rooms .room3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: solid black;
 }
 /*# sourceMappingURL=form_reservation.css.map */

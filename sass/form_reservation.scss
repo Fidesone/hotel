@@ -1,17 +1,30 @@
 .container_rooms{
-    display: flex;
+    display:inline-block;
     align-items:center;
     justify-content:space-around;
-    background-color:chartreuse;
+    // background-color:chartreuse;
 
-    .room{
-        display: flex;
+    .room1{
+        display:flex;
         align-items: center;
         justify-content: center;
-        width: 500px;
-        height: 500px;
         border:solid black;
+        
 
+    }
+    .room2{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border:solid black;
+        
+
+    }
+    .room3{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border:solid black;
     }
 
 }
