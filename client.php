@@ -17,6 +17,7 @@ session_start();
 </head>
 <body>
 <h1>Soy un cliente </h1>
+<a href='form_reservation.php'>Reservar una habitación </a>
 <a href='session_closed.php'>Cerrar sesión </a>
 <body>
 </HTML>

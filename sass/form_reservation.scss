@@ -1,0 +1,17 @@
+.container_rooms{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    background-color:chartreuse;
+
+    .room{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 500px;
+        border:solid black;
+
+    }
+
+}
