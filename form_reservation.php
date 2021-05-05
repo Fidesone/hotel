@@ -1,5 +1,15 @@
 <?
 include_once 'connection.php';
+
+session_start();
+
+    if(!isset($_SESSION['roles'])){
+        header('location:login.php');
+    } else{
+        if($_SESSION['roles']!=2){
+        header('location:login.php');
+        }
+    }
 ?>
 
 <DOCTYPE html>
@@ -12,7 +22,20 @@ include_once 'connection.php';
     <div class="container_rooms">
     <div class="room1">
         <img src="img/hab_individual.jpg"></img>
+        <div>
         <h2> 1. Individual</h2>
+        <form action="insert_rooms.php" method="post" class="container_form">
+        <h2 class="container_newuser">Registrar una nueva habitación</h2>
+        <input type="number" name='num_habitacion' placeholder='Número de habitación'> <br><br>
+        <input type="number" name='num_camas' placeholder='Número de camas'> <br><br>
+        <select name="op">
+            <option value= "una"> Uno </option>
+            <option value= "dos"> Dos </option>
+        
+        <input type="submit" name='registrar'>
+    </form> 
+        </div>
+        
     </div> 
     <br></br>
     <div class="room2">
