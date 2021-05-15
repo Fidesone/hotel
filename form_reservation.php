@@ -24,13 +24,30 @@ session_start();
         <img src="img/hab_individual.jpg"></img>
         <div>
         <h2> 1. Individual</h2>
-        <form action="insert_rooms.php" method="post" class="container_form">
+        <form action="insert_reservation.php" method="post" class="container_form">
         <h2 class="container_newuser">Registrar una nueva habitación</h2>
-        <input type="number" name='num_habitacion' placeholder='Número de habitación'> <br><br>
-        <input type="number" name='num_camas' placeholder='Número de camas'> <br><br>
-        <select name="op">
+        <h3 class="container_newuser">Datos personales del cliente</h3>
+        <p>Nombre del cliente </p>
+        <input type="text" name='nombre_cliente'>  
+        <p>Apellido del cliente</p>
+        <input type="text" name='apellido_cliente'> 
+        <p>Móvil del cliente</p>
+        <input type="number" name='num_habitacion'> 
+        <p>Número de habitacion</p>
+        <select name='num_habitacion'> 
+            <option>101</option>
+            <option>102</option>
+            <option>103</option>
+        </select>
+        <p>Numero de camas</p>
+        
+        <select name="num_camas">
             <option value= "una"> Uno </option>
             <option value= "dos"> Dos </option>
+            <option value= "tres"> Tres </option>
+        
+        </select>
+
         
         <input type="submit" name='registrar'>
     </form> 

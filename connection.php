@@ -5,9 +5,9 @@
     $user="root";
     $pass="";
     $server="localhost";
-    $db= "hotel:3307";
+    $db= "bbdd_hotel";
 
-    $conn = new PDO("mysql:host=localhost:3307;dbname=hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
+    $conn = new PDO("mysql:host=localhost;dbname=bbdd_hotel", "root", "" ) or die ("Ha saltado un error al conectar" .mysqli_connect());
   //   return $conn;
   // }
     
