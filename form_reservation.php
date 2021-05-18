@@ -1,4 +1,4 @@
-<?
+<?php
 include_once 'connection.php';
 
 session_start();
@@ -20,10 +20,16 @@ session_start();
 <body>
     <h1>Reservar una habitación</h1>
     <div class="container_rooms">
+    <?php
+        $query= $conn->prepare("SELECT * FROM habitacion");
+        $query->execute();
+        while($row = $query->fetch()){
+    ?>
     <div class="room1">
-        <img src="img/hab_individual.jpg"></img>
+        <img src="<?php echo $row['imagen'] ?>"></img>
             <div>
-                <h2> 1. Individual</h2>
+                <h2><?php echo $row['nombre'] ?></h2>
+                <h3><?php echo $row['descrip'] ?></h3>
             <form action="insert_reservation.php" method="post" class="container_form">
                 <h2 class="container_newuser">Registrar una nueva habitación</h2>
                 <h3 class="container_newuser">Datos personales del cliente</h3>
@@ -33,20 +39,7 @@ session_start();
                 <input type="text" name='apellido_cliente'> 
                 <p>Móvil del cliente</p>
                 <input type="number" name='movil_cliente'> 
-                <p>Número de habitacion</p>
-                <select name='id_habitacion'> 
-                    <option>101</option>
-                    <option>102</option>
-                    <option>103</option>
-                </select>
-                <p>Numero de camas</p>
-        
-                <select name="num_camas">
-                    <option value= "una"> Uno </option>
-                    <option value= "dos"> Dos </option>
-                    <option value= "tres"> Tres </option>
                 
-                </select> 
 
                 <input type="submit" name='registrar'>
             </form> 
@@ -54,15 +47,13 @@ session_start();
         
     </div> 
     <br></br>
-    <div class="room2">
-        <img src="img/hab_doble.jpg"></img>
-        <h2> 2. Doble</h2>
-    </div> 
-    <br></br>
-    <div class="room3">
-        <img src="img/hab_suite.jpg"></img>
-        <h2> 3. Suite</h2>
-    </div> 
+        
+
+    <?php
+        }
+    ?>
+    
+    
 
     </div>
 </body>

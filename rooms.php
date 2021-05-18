@@ -59,10 +59,10 @@
     ?>
 
         <tr>
-            <td><?php echo $row['num_habitacion'] ?></td>
+            <td><?php echo $row['id_habitacion'] ?></td>
             <td><?php echo $row['num_camas'] ?></td>
             <td><?php echo $row['precio'] ?></td>
-            <td><?php echo $row['id_tipo'] ?></td>
+            <td><?php echo $row['nombre'] ?></td>
             <td><a href="rooms_update.php?upd=<?php echo $row['id_habitacion']; ?>">Editar</a></td>
             <td><a href="remove.php?upd=<?php echo $row['id_habitacion']; ?>"class="item_link">Eliminar</a></td>
         </tr>
