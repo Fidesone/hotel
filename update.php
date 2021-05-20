@@ -29,14 +29,16 @@ if ($res > 0){
                 
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Contraseña</th>
             <th>email</th>
             <th>Rol</th>
             <!-- <th>Operacion</th> -->
         </tr>
         <tr>
         <input type="hidden" name='id' value="<?= $data['id']?>">
-        <td><input type="text" name='nombre' placeholder='nombre' value="<?= $data['nombre']?>"></td>
-        <td><input type="text" name='apellido' placeholder='apellido' value="<?= $data['apellido']?>"></td>
+        <td><input type="text" name='nombre' placeholder='Nombre' value="<?= $data['nombre']?>"></td>
+        <td><input type="text" name='apellido' placeholder='Apellido' value="<?= $data['apellido']?>"></td>
+        <td><input type="text" name='password' placeholder='Contraseña' value="<?= $data['password']?>"></td>
         <td><input type="text" name='email' placeholder='email' value="<?= $data['email']?>"></td>
         <td><input type="text" name='id_roles' placeholder='Rol' value="<?= $data['id_roles'] ?>"></td>
         <td><input type=submit name='Actualizar'></td>

@@ -33,6 +33,7 @@
     <h2 class="container_newuser">Registrar nuevo usuario</h2>
         <input type="text" name='nombre' placeholder='Nombre'> <br><br>
         <input type="text" name='apellido' placeholder='Apellido'> <br><br>
+        <input type="text" name='password' placeholder='Contraseña'> <br><br>
         <input type="email" name='email' placeholder='Email'> <br><br>
         <input type="number" name='id_roles' placeholder='ROL'> <br><br>
         <input type="submit" name='registrar'>
@@ -46,6 +47,7 @@
                 
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Password</th>
             <th>email</th>
             <th>Rol</th>
             <!-- <th>Operacion</th> -->
@@ -61,6 +63,7 @@
         <tr>
             <td><?php echo $row['nombre'] ?></td>
             <td><?php echo $row['apellido'] ?></td>
+            <td><?php echo $row['password'] ?></td>
             <td><?php echo $row['email'] ?></td>
             <td><?php echo $row['id_roles'] ?></td>
             <td><a href="update.php?upd=<?php echo $row['id']; ?>">Editar</a></td>
