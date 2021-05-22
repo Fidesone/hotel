@@ -18,7 +18,11 @@
 <body>
 
 <nav>
-<h1>Bienvenido Admin</h1>
+<?php
+
+echo '<h1> '.$_COOKIE["nombre"].' </h1>';
+?>
+
     <a  class='nav-admin' href='users.php'> Usuarios </a>
     <a  class='nav-admin' href='rooms.php'> Habitaciones</a>
     <a  class='nav-admin' href='booking.php'> Reservas </a>

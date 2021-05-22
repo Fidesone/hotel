@@ -31,19 +31,29 @@ session_start();
                 <h2><?php echo $row['nombre'] ?></h2>
                 <h3><?php echo $row['descrip'] ?></h3>
             <form action="insert_reservation.php" method="post" class="container_form">
+                <input type="hidden" name="id_habitacion" value="<?php echo $row['id_habitacion']?>">
                 <h2 class="container_newuser">Registrar una nueva habitación</h2>
                 <h3 class="container_newuser">Datos personales del cliente</h3>
+
                 <p>Nombre del cliente </p>
                 <input type="text" name='nombre_cliente'>  
                 <p>Apellido del cliente</p>
                 <input type="text" name='apellido_cliente'> 
                 <p>Móvil del cliente</p>
                 <input type="number" name='movil_cliente'> 
-                
-
+                <p>Fecha Inicio</p>
+                <input type="date" name='fecha_ini' placeholder='Fecha Inicio'> 
+                <p>Fecha Fin</p>
+                <input type="date" name='fecha_fin' placeholder='Fecha Fin'> 
                 <input type="submit" name='registrar'>
             </form> 
         </div>
+
+        <!-- <form action="insert_reservation.php" method="post" class="container_form">
+    <h2 class="container_newuser">Registrar una nueva Reserva</h2>
+        
+        <input type="submit" name='registrar'>
+    </form> -->
         
     </div> 
     <br></br>

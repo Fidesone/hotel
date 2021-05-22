@@ -19,22 +19,16 @@ include_once 'connection.php';
 </head>
 <body>
 </div>
-    <form action="insert_user.php" method="post" class="container_form">
-    <h2 class="container_newuser">Registrar una nueva Reserva</h2>
-        <input type="text" name='nombre' placeholder='Nombre'> <br><br>
-        <input type="text" name='id_cliente' placeholder='ID Cliente'> <br><br>
-        <input type="text" name='fecha_ini' placeholder='Fecha Inicio'> <br><br>
-        <input type="email" name='fecha_fin' placeholder='Fecha Fin'> <br><br>
-        <input type="submit" name='registrar'>
-    </form>
+    
 <div class="container_table">
     <h2>Reservas Totales</h2>
     <table class='user_table'>
     
         <tr>
                 
-            <th>Id Cliente</th>
+            <th>Id Reservas</th>
             <th>Nombre</th>
+            <th>Habitación</th>
             <th>Fecha Inicio</th>
             <th>Fecha Fin</th>
             <!-- <th>Operacion</th> -->
@@ -42,13 +36,14 @@ include_once 'connection.php';
     
                 
     <?php
-        $query= $conn->prepare("SELECT * FROM reservas");
+        $query= $conn->prepare("SELECT r.id_res, c.nombre_cliente, r.fecha_ini , r.fecha_fin, h.nombre FROM reservas r INNER JOIN clientes c on r.id_cliente = c.id_cliente INNER JOIN habitacion_reservas hr on r.id_res= hr.id_reserva INNER JOIN habitacion h on hr.id_habitacion = h.id_habitacion");
         $query->execute();
         while($row = $query->fetch()){
     ?>
 
         <tr>
-            <td><?php echo $row['id_cliente'] ?></td>
+            <td><?php echo $row['id_res'] ?></td>
+            <td><?php echo $row['nombre_cliente'] ?></td>
             <td><?php echo $row['nombre'] ?></td>
             <td><?php echo $row['fecha_ini'] ?></td>
             <td><?php echo $row['fecha_fin'] ?></td>

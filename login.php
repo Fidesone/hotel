@@ -35,13 +35,16 @@
             //valida rol
             $rol = $result[5];
             $_SESSION['roles'] = $rol;
+            setcookie("nombre", $result [1], time()+(86400*30), "/");
             switch($_SESSION['roles']){
                 case 1: 
+                    
                     header('location: admin.php');
+
                 break;
                 
                 case 2: 
-                    header('location: client.php');
+                    header('location: client.php' );
                 break;
                 default:
              }

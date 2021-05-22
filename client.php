@@ -16,7 +16,10 @@ session_start();
 <title>cliente</title>
 </head>
 <body>
-<h1>Soy un cliente </h1>
+<?php
+
+echo '<h1> '.$_COOKIE["nombre"].' </h1>';
+?>
 <a href='form_reservation.php'>Reservar una habitación </a>
 <a href='session_closed.php'>Cerrar sesión </a>
 <body>
