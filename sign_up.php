@@ -11,6 +11,7 @@ include 'connection.php';
     <body>
     <!-- El form se envia a register.php -->
     <div class='container_form_sing_up'>
+        <div class='container_form'>
         <form action='sign_up.php'   method="post">
             <h2>Registrate</h2>
             <input type="text" name='nombre' placeholder='Nombre'> <br><br>
@@ -23,7 +24,7 @@ include 'connection.php';
             <a href="login.php">Iniciar sesion</a>
             </p>
         </form>
-        
+    </div>      
     </div>
     </body>
 </html>

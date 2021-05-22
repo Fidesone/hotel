@@ -1,16 +1,14 @@
- body{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-     background-color: blueviolet;
+ *{
+     margin: 0;
+     padding: 0;
  }
     .container_general{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    //background-color: aqua;
-    height: 100%;
-    width: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(155, 123, 185);
+        height: 100vh;
+    
 
     .container-form{
     
@@ -18,7 +16,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(218, 90, 165);
-    width: 35%;
+    
     border-radius: 20px;
     .login-form{
         display:flex;

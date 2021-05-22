@@ -1,14 +1,6 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: blueviolet;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .container_general {
@@ -21,8 +13,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  width: 100%;
+  background-color: #9b7bb9;
+  height: 100vh;
 }
 
 .container_general .container-form {
@@ -36,7 +28,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #da5aa5;
-  width: 35%;
   border-radius: 20px;
 }
 
