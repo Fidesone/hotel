@@ -5,10 +5,12 @@ include 'connection.php';
 <!DOCTYPE html>
 <html>
 <head>
+<link href="sass/sign_up.css" rel="stylesheet" type="text/css">
 <title>Registro de usuario</title>
 </head>
     <body>
     <!-- El form se envia a register.php -->
+    <div class='container_form_sing_up'>
         <form action='sign_up.php'   method="post">
             <h2>Registrate</h2>
             <input type="text" name='nombre' placeholder='Nombre'> <br><br>
@@ -16,13 +18,13 @@ include 'connection.php';
             <input type="email" name='email' placeholder='Email'> <br><br>
             <input type="password" name='password' placeholder='Contraseña'> <br><br>
             <input type="submit" name='register'>
+            <p>
+            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+            <a href="login.php">Iniciar sesion</a>
+            </p>
         </form>
-        <p>
-        <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
-        <a href="login.php">Iniciar sesion</a>
         
-
-        </p>
+    </div>
     </body>
 </html>
 

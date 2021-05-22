@@ -1,26 +1,29 @@
-body{
+ body{
     display:flex;
     align-items: center;
     justify-content: center;
-}
-.container-form{
+     background-color: blueviolet;
+ }
+    .container_general{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    //background-color: aqua;
+    height: 100%;
+    width: 100%;
+
+    .container-form{
     
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(90, 135, 218);
-    width: 450px;
+    background-color: rgb(218, 90, 165);
+    width: 35%;
     border-radius: 20px;
-    
-    
-    
     .login-form{
         display:flex;
         align-items:center;
         justify-content: center;
-        
-        
-        
         h3, h1{
             
             text-align: center;
@@ -53,3 +56,4 @@ body{
     }
 }
 
+}

@@ -62,6 +62,7 @@
 </head>
 <body>
 <!-- Creación de formulario para el registro de cada usuario -->
+<div class='container_general'>
 <div class='container-form'>
     <div class='login-form'>
         <form action='#' method='post'>
@@ -83,6 +84,6 @@
 
 </div>
 
-    
+</div>    
 </body>
 <html>

@@ -8,9 +8,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: blueviolet;
 }
 
-.container-form {
+.container_general {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,12 +21,26 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #5a87da;
-  width: 450px;
+  height: 100%;
+  width: 100%;
+}
+
+.container_general .container-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #da5aa5;
+  width: 35%;
   border-radius: 20px;
 }
 
-.container-form .login-form {
+.container_general .container-form .login-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,12 +52,12 @@ body {
           justify-content: center;
 }
 
-.container-form .login-form h3, .container-form .login-form h1 {
+.container_general .container-form .login-form h3, .container_general .container-form .login-form h1 {
   text-align: center;
   color: white;
 }
 
-.container-form .login-form input[type='text'], .container-form .login-form input[type='password'] {
+.container_general .container-form .login-form input[type='text'], .container_general .container-form .login-form input[type='password'] {
   outline: none;
   margin: 15px;
   border-radius: 3px;
@@ -52,7 +67,7 @@ body {
   width: 250px;
 }
 
-.container-form .login-form input[type='submit'] {
+.container_general .container-form .login-form input[type='submit'] {
   padding: 10px;
   width: 150px;
   color: white;
@@ -61,11 +76,11 @@ body {
   cursor: pointer;
 }
 
-.container-form .login-form input[type='submit']:hover {
+.container_general .container-form .login-form input[type='submit']:hover {
   background-color: #c2356b;
 }
 
-.container-form .login-form a {
+.container_general .container-form .login-form a {
   text-align: center;
 }
 /*# sourceMappingURL=login.css.map */
