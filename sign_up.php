@@ -10,20 +10,28 @@ include 'connection.php';
 </head>
     <body>
     <!-- El form se envia a register.php -->
-    <div class='container_form_sing_up'>
+    <div class='container_general'>
         <div class='container_form'>
         <div class='login_form'>
         <form action='sign_up.php'   method="post">
-            <h2>Registrate</h2>
-            <input type="text" name='nombre' placeholder=' Introduce tu nombre'> 
-            <input type="text" name='apellido' placeholder='Introduce tu apellido'> 
-            <input type="email" name='email' placeholder='Introduce tu email'> 
-            <input type="password" name='password' placeholder='Contraseña'> 
+            <h1>Registrate</h1>
+            <h3>Introduce tus credenciales: </h3>
+            <p>Nombre de usuario:</p>
+            <input type="text" name='nombre'> 
+            <p>Primer Apellido:</p>
+            <input type="text" name='apellido'> 
+            <p>Email:</p>
+            <input type="email" name='email'> 
+            <p>Contraseña:</p>
+            <input type="password" name='password'> 
+            <div class='button_registrate'>
             <input type="submit" name='register'>
-            <p>
+            </div>
+            <div class='linea'></div>
             <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+            <div class='button_registrate'>
             <a href="login.php">Iniciar sesion</a>
-            </p>
+            </div>
         </form>
     </div>
     </div>      

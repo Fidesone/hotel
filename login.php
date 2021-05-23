@@ -63,7 +63,7 @@
 <body>
 <!-- Creación de formulario para el registro de cada usuario -->
 <div class='container_general'>
-<div class='container-form'>
+<div class='container_form'>
     <div class='login_form'>
         <form action='#' method='post'>
             <h1>Login</h1>
@@ -76,7 +76,7 @@
             <input type='submit' value='Sign Up'>
             </div>
             <div class='linea'></div>
-            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h3>
+            <h3>¿No tienes cuenta? Pincha aquí abajo</h3>
             <div class='button_registrate'>
             <a href="sign_up.php">Registrate</a>
             </div>
