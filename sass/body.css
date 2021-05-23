@@ -1,4 +1,95 @@
 body {
   background-image: url("../img/panoramica_hotel.jpg");
 }
+
+body #container_index {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+body #container_index .panel {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 40%;
+  height: 40%;
+  background-color: skyblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: solid black 1px;
+  border-radius: 20px;
+}
+
+body #container_index .panel .left {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  background-color: #008cff;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+body #container_index .panel .left a {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+body #container_index .panel .left a:hover {
+  color: black;
+}
+
+body #container_index .panel .left .img img {
+  width: 50px;
+  height: 50px;
+}
+
+body #container_index .panel .right {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40%;
+  background-color: #19c259;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+body #container_index .panel .right a {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+}
+
+body #container_index .panel .right a:hover {
+  color: black;
+}
+
+body #container_index .panel .right .img img {
+  width: 50px;
+  height: 50px;
+}
 /*# sourceMappingURL=body.css.map */

@@ -73,7 +73,7 @@
             <p>Contraseña:</p>
             <input type='password' name='password'> 
             <div class='button_registrate'>
-            <input type='submit' value='Sign Up'>
+            <input type='submit' value='Login'>
             </div>
             <div class='linea'></div>
             <h3>¿No tienes cuenta? Pincha aquí abajo</h3>

@@ -58,7 +58,7 @@
 .container_general .container_form .login_form input[type='text'], .container_general .container_form .login_form input[type='password'], .container_general .container_form .login_form input[type='email'] {
   outline: none;
   margin: 15px;
-  border-radius: 3px;
+  border-radius: 7px;
   border: 1px solid black;
   display: block;
   padding: 10px;
@@ -70,7 +70,7 @@
   width: 150px;
   color: white;
   background-color: #329653;
-  border-radius: 5px;
+  border-radius: 7px;
   cursor: pointer;
 }
 

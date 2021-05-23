@@ -25,7 +25,7 @@ include 'connection.php';
             <p>Contraseña:</p>
             <input type="password" name='password'> 
             <div class='button_registrate'>
-            <input type="submit" name='register'>
+            <input type="submit" name='register' value='Registrar'>
             </div>
             <div class='linea'></div>
             <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
