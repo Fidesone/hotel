@@ -12,18 +12,20 @@ include 'connection.php';
     <!-- El form se envia a register.php -->
     <div class='container_form_sing_up'>
         <div class='container_form'>
+        <div class='login_form'>
         <form action='sign_up.php'   method="post">
             <h2>Registrate</h2>
-            <input type="text" name='nombre' placeholder='Nombre'> <br><br>
-            <input type="text" name='apellido' placeholder='Apellido'> <br><br>
-            <input type="email" name='email' placeholder='Email'> <br><br>
-            <input type="password" name='password' placeholder='Contraseña'> <br><br>
+            <input type="text" name='nombre' placeholder=' Introduce tu nombre'> 
+            <input type="text" name='apellido' placeholder='Introduce tu apellido'> 
+            <input type="email" name='email' placeholder='Introduce tu email'> 
+            <input type="password" name='password' placeholder='Contraseña'> 
             <input type="submit" name='register'>
             <p>
             <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
             <a href="login.php">Iniciar sesion</a>
             </p>
         </form>
+    </div>
     </div>      
     </div>
     </body>

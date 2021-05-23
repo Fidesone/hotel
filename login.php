@@ -64,20 +64,23 @@
 <!-- Creación de formulario para el registro de cada usuario -->
 <div class='container_general'>
 <div class='container-form'>
-    <div class='login-form'>
+    <div class='login_form'>
         <form action='#' method='post'>
             <h1>Login</h1>
-            <h3>Introduce tus credenciales </h3>
-        
-            <input type='text' name='nombre' placeholder='Introduce tu nombre'> 
-            <input type='password' name='password' placeholder='Introduce tu contraseña'> 
+            <h3>Introduce tus credenciales: </h3>
+            <p>Nombre de usuario:</p>
+            <input type='text' name='nombre'> 
+            <p>Contraseña:</p>
+            <input type='password' name='password'> 
+            <div class='button_registrate'>
             <input type='submit' value='Sign Up'>
-            <p>
-            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+            </div>
+            <div class='linea'></div>
+            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h3>
+            <div class='button_registrate'>
             <a href="sign_up.php">Registrate</a>
-        
-
-            </p>
+            </div>
+           
         </form>
     
     </div>

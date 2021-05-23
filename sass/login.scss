@@ -6,52 +6,84 @@
         display:flex;
         align-items: center;
         justify-content: center;
-        background-color: rgb(155, 123, 185);
+        background-image: url("../img/panoramica_hotel.jpg");
         height: 100vh;
     
 
-    .container-form{
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(218, 90, 165);
-    
-    border-radius: 20px;
-    .login-form{
+        .container-form{
+        padding: 10px;
         display:flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
-        h3, h1{
+        background-color: rgb(92, 90, 218);
+        border-radius: 20px;
+        .login_form{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            h3, h1, p{
+                margin-top:20px ;
+                margin-bottom: 10px;
+                text-align: center;
+                color: white;
+            }
+            p{
             
-            text-align: center;
-            color: white;
-        }
-    
-        input[type='text'], input[type='password']{
-            outline:none;
-            margin: 15px;
-            border-radius: 3px;
-            border: 1px solid black;
-            display: block;
-            padding: 10px;
-            width:250px;
-        }
-        input[type='submit']{
-            padding: 10px;
-            width: 150px;
-            color: white;
-            background-color: rgb(50, 150, 83);
-            border-radius:5px;
-            cursor:pointer;
-        }
-        input[type='submit']:hover{
-            background-color: rgb(194, 53, 107);
-        }
-        a{
-            text-align: center;
+                margin-bottom: -10px;
+            }
+            
+        
+            input[type='text'], input[type='password']{
+                outline:none;
+                margin: 15px;
+                border-radius: 7px;
+                border: 1px solid black;
+                display: block;
+                padding: 10px;
+                width:250px;
+            }
+            input[type='submit']{
+                padding: 10px;
+                width: 150px;
+                color: white;
+                background-color: rgb(79, 182, 113);
+                border-radius:5px;
+                cursor:pointer;
+                
+            }
+            input[type='submit']:hover{
+                background-color: rgb(228, 92, 92);
+            }
+            .linea{
+                border: 1px solid black; 
+                margin: 15px;
+                
+            }
+            .button_registrate{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top:5px ;
+                margin-bottom: 10px;
+                
+                a{
+                color: white;
+                text-decoration: none;
+                outline:none;
+                margin: 15px;
+                border-radius: 7px;
+                border: 1px solid black;
+                display: block;
+                padding: 10px;
+                background-color:rgb(228, 92, 92);
+                
+                }
+                a:hover{
+                background-color: rgb(93, 165, 143);
+                }
+                
+            }    
         }
     }
-}
 
 }

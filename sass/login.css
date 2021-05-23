@@ -13,11 +13,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #9b7bb9;
+  background-image: url("../img/panoramica_hotel.jpg");
   height: 100vh;
 }
 
 .container_general .container-form {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,11 +28,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #da5aa5;
+  background-color: #5c5ada;
   border-radius: 20px;
 }
 
-.container_general .container-form .login-form {
+.container_general .container-form .login_form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,35 +44,72 @@
           justify-content: center;
 }
 
-.container_general .container-form .login-form h3, .container_general .container-form .login-form h1 {
+.container_general .container-form .login_form h3, .container_general .container-form .login_form h1, .container_general .container-form .login_form p {
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color: white;
 }
 
-.container_general .container-form .login-form input[type='text'], .container_general .container-form .login-form input[type='password'] {
+.container_general .container-form .login_form p {
+  margin-bottom: -10px;
+}
+
+.container_general .container-form .login_form input[type='text'], .container_general .container-form .login_form input[type='password'] {
   outline: none;
   margin: 15px;
-  border-radius: 3px;
+  border-radius: 7px;
   border: 1px solid black;
   display: block;
   padding: 10px;
   width: 250px;
 }
 
-.container_general .container-form .login-form input[type='submit'] {
+.container_general .container-form .login_form input[type='submit'] {
   padding: 10px;
   width: 150px;
   color: white;
-  background-color: #329653;
+  background-color: #4fb671;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.container_general .container-form .login-form input[type='submit']:hover {
-  background-color: #c2356b;
+.container_general .container-form .login_form input[type='submit']:hover {
+  background-color: #e45c5c;
 }
 
-.container_general .container-form .login-form a {
-  text-align: center;
+.container_general .container-form .login_form .linea {
+  border: 1px solid black;
+  margin: 15px;
+}
+
+.container_general .container-form .login_form .button_registrate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.container_general .container-form .login_form .button_registrate a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+  margin: 15px;
+  border-radius: 7px;
+  border: 1px solid black;
+  display: block;
+  padding: 10px;
+  background-color: #e45c5c;
+}
+
+.container_general .container-form .login_form .button_registrate a:hover {
+  background-color: #5da58f;
 }
 /*# sourceMappingURL=login.css.map */

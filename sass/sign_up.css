@@ -20,4 +20,48 @@
 .container_form_sing_up .container_form {
   background-color: brown;
 }
+
+.container_form_sing_up .container_form .login_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container_form_sing_up .container_form .login_form h3, .container_form_sing_up .container_form .login_form h1 {
+  text-align: center;
+  color: white;
+}
+
+.container_form_sing_up .container_form .login_form input[type='text'], .container_form_sing_up .container_form .login_form input[type='password'], .container_form_sing_up .container_form .login_form input [type='email'] {
+  outline: none;
+  margin: 15px;
+  border-radius: 3px;
+  border: 1px solid black;
+  display: block;
+  padding: 10px;
+  width: 250px;
+}
+
+.container_form_sing_up .container_form .login_form input[type='submit'] {
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: #329653;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container_form_sing_up .container_form .login_form input[type='submit']:hover {
+  background-color: #c2356b;
+}
+
+.container_form_sing_up .container_form .login_form a {
+  text-align: center;
+}
 /*# sourceMappingURL=sign_up.css.map */
