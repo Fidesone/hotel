@@ -5,15 +5,16 @@ include_once 'connection.php';
 // $conn=connect();
 // echo "La conexión ha sido exitosa" . "<br>";
 include 'header.php';
-//include 'sign_up.php';
-?>
 
+?>
 <head>
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
 <link href="sass/body.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 
 </head>
 
@@ -26,7 +27,7 @@ include 'header.php';
             <div class='linea'></div>
             <div class='izde'>
             <div class='left'>
-            <a href='sign_up.php'>Registrate</a>
+            <a href='sign_up.php' font-family: >Registrate</a>
             <div class='img'><img src='img/register_icon.png'></img></div>
             </div>
             <div class='right'>

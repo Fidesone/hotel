@@ -2,6 +2,7 @@
 
  include_once 'connection.php';
  
+ 
 
  session_start(); // Inicia una nueva sesión
 
@@ -58,8 +59,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="sass/login.css" rel="stylesheet" type="text/css">
+<link href="sass/header.css" rel="stylesheet" type="text/css">
+<link href="sass/sign_up.css" rel="stylesheet" type="text/css">
+
 </head>
+
 <body>
 <!-- Creación de formulario para el registro de cada usuario -->
 <div class='container_general'>

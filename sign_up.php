@@ -1,11 +1,15 @@
 <?php
 include 'connection.php';
+
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
+
+
+</head>
 <title>Registro de usuario</title>
 </head>
     <body>

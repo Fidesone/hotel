@@ -30,12 +30,7 @@
 
 
 
-        <nav>
-        <a  class='nav-link' href='index.php'> Inicio </a>
-        <a  class='nav-link' href='sign_up.php'> Registro</a>
-        <a  class='nav-link' href='#'> Precio </a>
-        <a  class='nav-link' href='#'> Contacto </a>
-        <nav>
+       
     </div>
        
 

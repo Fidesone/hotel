@@ -100,7 +100,8 @@ body #container_index .panel .left {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40%;
-  background-color: #008cff;
+  opacity: 0.9;
+  background-color: #57a1dd;
   border: solid black 1px;
   border-radius: 5px;
 }
@@ -132,7 +133,8 @@ body #container_index .panel .right {
       -ms-flex-pack: center;
           justify-content: center;
   width: 40%;
-  background-color: #19c259;
+  opacity: 0.9;
+  background-color: #57ad78;
   border: solid black 1px;
   border-radius: 5px;
 }
