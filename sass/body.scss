@@ -3,26 +3,59 @@ body{
     background-image: url("../img/panoramica_hotel.jpg");
     #container_index{
         display: flex;
-        align-items: center;
+        //align-items: center;
         justify-content: center;
         height: 100vh;
         
         .panel{
-            display:inline-flex;
+            display:block;
             width: 40%;
-            height: 40%;
-            background-color: skyblue;
-            align-items: center;
-            justify-content:space-around;
+            height: 35%;
+            background-color:rgb(66, 61, 61) ;
+            opacity: 0.9;
+            align-items:center;
+            justify-content:center;
             border: solid black 1px;
             border-radius: 20px;
 
-
-
-            .left{
-                display:inline-flex;
-                align-items: center;
+            
+            .title{
+                color: white;
+                font-size: 3rem;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                display: flex;
+                align-items:center;
                 justify-content: center;
+            }
+            .subtitle{
+                margin:10px;
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                color: white;
+               }
+            .linea{
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                border: solid rgb(219, 131, 131) 1px;
+                width: 92%;
+                margin: 20px;
+                
+            }
+            .izde{
+                display: flex;
+                align-items:center;
+                justify-content: center;
+                margin: 20px;
+
+            }
+            .left{
+                margin: 20px;
+                display:flex;
+                align-items: center;
+                justify-content:center;
                 //height: 50%;
                 width: 40%;
                 background-color: rgb(0, 140, 255);
@@ -44,7 +77,8 @@ body{
                 }
             }
             .right{
-                display:inline-flex;
+                margin: 20px;
+                display:flex;
                 align-items: center;
                 justify-content: center;
                 //height: 50%;

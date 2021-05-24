@@ -17,7 +17,12 @@ include 'header.php';
 
 <body>
     <div id='container_index'>
+    
         <div class='panel'>
+            <h1 class='title'>Bienvenido</h1>
+            <h3 class='subtitle'>Empieza a disfrutar de nuestros servicios</h3>
+            <div class='linea'></div>
+            <div class='izde'>
             <div class='left'>
             <a href='sign_up.php'>Registrate</a>
             <div class='img'><img src='img/register_icon.png'></img></div>
@@ -26,6 +31,9 @@ include 'header.php';
             <a href='login.php'>Login</a>
             <div class='img'><img src='img/login_icon.png'></img></div>
             </div>
+            </div>
+
+            
         </div> 
     </div>    
 </body>
