@@ -12,6 +12,8 @@ include 'header.php';
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
 <link href="sass/body.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
 </head>
 
