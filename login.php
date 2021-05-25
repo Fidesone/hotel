@@ -60,8 +60,12 @@
 <html>
 <head>
 <link href="sass/header.css" rel="stylesheet" type="text/css">
+<link href="sass/login.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -69,9 +73,19 @@
 <div class='container_general'>
 <div class='container_form'>
     <div class='login_form'>
+        
         <form action='#' method='post'>
+            
+          
+        <div class='arrow'> 
+            <a href='index.php'> <img src='img/home.png'></img></a>
+            <a href='index.php'> HOME </a>
+        </div>
+
             <h1>Login</h1>
+            
             <h3>Introduce tus credenciales: </h3>
+            <div class='linea'></div>
             <p>Nombre de usuario:</p>
             <input type='text' name='nombre'> 
             <p>Contraseña:</p>
@@ -80,7 +94,7 @@
             <input type='submit' value='Login'>
             </div>
             <div class='linea'></div>
-            <h3>¿No tienes cuenta? Pincha aquí abajo</h3>
+            <h3>¿No tienes cuenta? </h3>
             <div class='button_registrate'>
             <a href="sign_up.php">Registrate</a>
             </div>

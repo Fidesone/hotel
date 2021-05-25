@@ -44,11 +44,47 @@
           justify-content: center;
 }
 
+.container_general .container_form .login_form .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: 10px;
+}
+
+.container_general .container_form .login_form .arrow img {
+  width: 40px;
+  height: 40px;
+}
+
+.container_general .container_form .login_form .arrow a {
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Mate SC', serif;
+  font-size: 1.3rem;
+}
+
+.container_general .container_form .login_form .arrow a:hover {
+  color: white;
+}
+
 .container_general .container_form .login_form h3, .container_general .container_form .login_form h1, .container_general .container_form .login_form p {
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
   color: white;
+}
+
+.container_general .container_form .login_form h1, .container_general .container_form .login_form h3, .container_general .container_form .login_form p {
+  letter-spacing: 2px;
+  font-family: 'Mate SC', serif;
 }
 
 .container_general .container_form .login_form p {

@@ -27,7 +27,7 @@ include 'header.php';
             <div class='linea'></div>
             <div class='izde'>
             <div class='left'>
-            <a href='sign_up.php' font-family: >Registrate</a>
+            <a href='sign_up.php' >Registrate</a>
             <div class='img'><img src='img/register_icon.png'></img></div>
             </div>
             <div class='right'>

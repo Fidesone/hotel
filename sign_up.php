@@ -7,7 +7,10 @@ include 'connection.php';
 <html>
 <head>
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 
 </head>
 <title>Registro de usuario</title>
@@ -18,8 +21,13 @@ include 'connection.php';
         <div class='container_form'>
         <div class='login_form'>
         <form action='sign_up.php'   method="post">
+        <div class='arrow'> 
+            <a href='index.php'> <img src='img/home.png'></img></a>
+            <a href='index.php'> HOME </a>
+        </div>
             <h1>Registrate</h1>
             <h3>Introduce tus credenciales: </h3>
+            <div class='linea'></div>
             <p>Nombre de usuario:</p>
             <input type="text" name='nombre'> 
             <p>Primer Apellido:</p>
@@ -32,7 +40,7 @@ include 'connection.php';
             <input type="submit" name='register' value='Registrar'>
             </div>
             <div class='linea'></div>
-            <h3>¿Ya tienes cuenta? Pincha aquí abajo</h2>
+            <h3>¿Ya tienes cuenta? </h2>
             <div class='button_registrate'>
             <a href="login.php">Iniciar sesion</a>
             </div>

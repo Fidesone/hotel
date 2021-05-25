@@ -107,6 +107,7 @@ body #container_index .panel .left {
 }
 
 body #container_index .panel .left a {
+  letter-spacing: 5px;
   text-decoration: none;
   font-size: 2em;
   color: white;
@@ -140,6 +141,7 @@ body #container_index .panel .right {
 }
 
 body #container_index .panel .right a {
+  letter-spacing: 5px;
   text-decoration: none;
   font-size: 2em;
   color: white;
