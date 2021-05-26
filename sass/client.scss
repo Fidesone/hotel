@@ -3,21 +3,30 @@
     padding: 0;
 }
 body{
-    height: 100vh;
-}
-.container_user{
     display: flex;
     align-items: center;
     justify-content: center;
+
     height: 100vh;
+    background-color: grey;
+}
+.container_user{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    //height: 100vh;
     .user{
         background-color: brown;
         color:white;
+        text-align: center;
+        border-radius: 5px;
+        
     }
 }
 
 .container_client{
-    display: block;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
     
@@ -27,12 +36,16 @@ body{
         display:flex;
         align-items: center;
         justify-content:center;
-        //height: 50%;
-        width: 40%;
+        height: 100px;
+        width: 100%;
         opacity: 0.9;
         background-color: rgb(87, 161, 221);
         border: solid black 1px;
         border-radius: 5px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
     }
 
@@ -41,12 +54,16 @@ body{
         display:flex;
         align-items: center;
         justify-content: center;
-        //height: 50%;
-        width: 40%;
+        height: 100px;
+        width: 100%;
         opacity: 0.9;
         background-color: rgb(87, 173, 120);
         border: solid black 1px;
         border-radius: 5px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
     }
 
 }

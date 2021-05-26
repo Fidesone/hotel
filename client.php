@@ -19,9 +19,9 @@ session_start();
 <body>
 <div class='container_user'>
     <div class='user'>
+        
         <?php
-
-        echo '<h1> '.$_COOKIE[ "nombre"].' </h1>';
+        echo '<h1> Bienvenido: '.$_COOKIE[ "nombre"].' </h1>';
         ?>
     </div>
 
