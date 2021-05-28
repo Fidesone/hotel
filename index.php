@@ -6,8 +6,10 @@ include_once 'connection.php';
 // echo "La conexión ha sido exitosa" . "<br>";
 include 'header.php';
 
+
 ?>
 <head>
+<link href="sass/footer.css" rel="stylesheet" type="text/css">
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
 <link href="sass/body.css" rel="stylesheet" type="text/css">
@@ -39,16 +41,10 @@ include 'header.php';
             
         </div> 
     </div>  
-    <div class='container_footer'>
-        <div class='footer'>
-            <nav>
-            <a  class='nav-link' href='index.php'> C/ Toledo, 149 </a>
-            <a  class='nav-link' href='https://github.com/Fidesone/hotel'><img src='img/github.png'></img> </a>
-            <a  class='nav-link' href='#'> Telefono: 666666666</a>
-            </nav>
-        </div>
-    </div>  
+    
 </body>
-
+<?php 
+include 'footer.php';
+?>
 
 </html>

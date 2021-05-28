@@ -1,1 +1,73 @@
-/* No CSS *//*# sourceMappingURL=admin.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url("../img/panoramica_hotel.jpg");
+  background-repeat: no-repeat;
+}
+
+body .container_user {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  width: 100vh;
+}
+
+body .container_user .user {
+  background-color: #9b4c4c;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+body .container_user .container_client {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container_user .container_client .right {
+  text-align: center;
+  text-justify: center;
+  margin: 10px;
+  display: block;
+  height: 100px;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #57ad78;
+  border: solid black 1px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+body .container_user .container_client .right a {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-justify: center;
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=admin.css.map */

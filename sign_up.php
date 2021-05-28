@@ -1,11 +1,15 @@
 <?php
 include 'connection.php';
+include 'header.php';
+
 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
+<link href="sass/footer.css" rel="stylesheet" type="text/css">
+<link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
@@ -29,13 +33,13 @@ include 'connection.php';
             <h3>Introduce tus credenciales: </h3>
             <div class='linea'></div>
             <p>Nombre de usuario:</p>
-            <input type="text" name='nombre'> 
+            <input type="text" name='nombre' autocomplete='username'> 
             <p>Primer Apellido:</p>
             <input type="text" name='apellido'> 
             <p>Email:</p>
             <input type="email" name='email'> 
             <p>Contraseña:</p>
-            <input type="password" name='password'> 
+            <input type="password" name='password' autocomplete='new-password' id='new-password'> 
             <div class='button_registrate'>
             <input type="submit" name='register' value='Registrar'>
             </div>
@@ -49,12 +53,15 @@ include 'connection.php';
     </div>      
     </div>
     </body>
+    <?php
+    include 'footer.php'
+    ?>
 </html>
 
 <?php
 
 
-     
+    if($_SERVER['REQUEST_METHOD']=='POST')
     if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
         $query = "INSERT INTO usuarios(nombre, apellido,  email, password)VALUES (:nombre , :apellido,  :email, :password)";

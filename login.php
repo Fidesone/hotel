@@ -1,6 +1,7 @@
 <?php
 
  include_once 'connection.php';
+ include 'header.php';
  
  
 
@@ -19,7 +20,7 @@
         default:
      }
 
- }
+ }  if($_SERVER['REQUEST_METHOD']=='POST')
     if(isset($_POST['nombre']) && isset($_POST['password'])){
         $nombre = $_POST['nombre'];
         $password = $_POST['password'];
@@ -59,6 +60,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="sass/footer.css" rel="stylesheet" type="text/css">
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/login.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
@@ -87,9 +89,9 @@
             <h3>Introduce tus credenciales: </h3>
             <div class='linea'></div>
             <p>Nombre de usuario:</p>
-            <input type='text' name='nombre'> 
+            <input type='text' name='nombre' autocomplete='username'> 
             <p>Contraseña:</p>
-            <input type='password' name='password'> 
+            <input type='password' name='password' autocomplete='current-password' id='current-password';> 
             <div class='button_registrate'>
             <input type='submit' value='Login'>
             </div>
@@ -105,6 +107,10 @@
 
 </div>
 
-</div>    
+</div> 
+
 </body>
+<?php 
+include 'footer.php';
+?>
 <html>

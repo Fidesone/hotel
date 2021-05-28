@@ -6,64 +6,72 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 100vh;
-    background-color: grey;
-}
-.container_user{
-    width: 70%;
-    align-items: center;
-    justify-content: center;
-    //height: 100vh;
-    .user{
-        background-color: brown;
-        color:white;
-        text-align: center;
-        border-radius: 5px;
-        
-    }
-}
-
-.container_client{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-image: url("../img/panoramica_hotel.jpg");
+    background-repeat: no-repeat;
     
-   
-    .left{
-        margin: 10px;
-        display:flex;
-        align-items: center;
-        justify-content:center;
-        height: 100px;
-        width: 100%;
-        opacity: 0.9;
-        background-color: rgb(87, 161, 221);
-        border: solid black 1px;
-        border-radius: 5px;
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
-    }
-
-    .right{
-        margin: 10px;
-        display:flex;
+    .container_user{
+        display: block;
         align-items: center;
         justify-content: center;
-        height: 100px;
-        width: 100%;
-        opacity: 0.9;
-        background-color: rgb(87, 173, 120);
-        border: solid black 1px;
-        border-radius: 5px;
-        a{
-            text-decoration: none;
-            color: white;
+        height: 80vh;
+        width: 100vh;
+        .user{
+            background-color: rgb(155, 76, 76);
+            color:white;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+
+        .container_client{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+           
+            .left{
+                margin: 10px;
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                height: 100px;
+                width: 100%;
+                opacity: 0.9;
+                background-color: rgb(87, 161, 221);
+                border: solid black 1px;
+                border-radius: 5px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+        
+            }
+        
+            .right{
+                margin: 10px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+                width: 100%;
+                opacity: 0.9;
+                background-color: rgb(87, 173, 120);
+                border: solid black 1px;
+                border-radius: 5px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        
         }
     }
-
+    
 }
+    
+    
+
+
+
+

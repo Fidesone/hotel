@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../img/panoramica_hotel.jpg");
+    background-repeat: no-repeat;
+    
+    .container_user{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        width: 100vh;
+        .user{
+            background-color: rgb(155, 76, 76);
+            color:white;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+
+        .container_client{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            
+            .right{
+                text-align: center;
+                text-justify: center;
+                margin: 10px;
+                display:block;
+                height: 100px;
+                width: 100%;
+                opacity: 0.9;
+                background-color: rgb(87, 173, 120);
+                border: solid black 1px;
+                border-radius: 10px;
+                opacity: 0.9;
+                a{
+                    text-align: center;
+                    justify-content: center;
+                    text-justify: center;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        
+        }
+    }
+    
+}
+    
+    

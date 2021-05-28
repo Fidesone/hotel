@@ -2,12 +2,15 @@
      margin: 0;
      padding: 0;
  }
+    body{
+        height: 100vh;
+        background-image: url("../img/panoramica_hotel.jpg");
+    }
     .container_general{
         display:flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../img/panoramica_hotel.jpg");
-        height: 100vh;
+        height: 80vh;
     
         .container_form{
         padding: 10px;

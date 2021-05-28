@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  height: 100vh;
+  background-image: url("../img/panoramica_hotel.jpg");
+}
+
 .container_general {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,8 +18,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../img/panoramica_hotel.jpg");
-  height: 100vh;
+  height: 80vh;
 }
 
 .container_general .container_form {

@@ -14,23 +14,39 @@
 <!DOCTYPE HTML>
 <head>
 <title>admin</title>
+<link href="sass/admin.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<div class='container_user'>
+    <div class='user'>
+        
+    <?php
+        echo '<h1> Bienvenido: '.$_COOKIE[ "nombre"].' </h1>';
+        ?>
+    </div>
 
-<nav>
-<?php
-
-echo '<h1> '.$_COOKIE["nombre"].' </h1>';
-?>
-
-    <a  class='nav-admin' href='users.php'> Usuarios </a>
-    <a  class='nav-admin' href='rooms.php'> Habitaciones</a>
-    <a  class='nav-admin' href='booking.php'> Reservas </a>
-    <a  class='nav-admin' href='#'> algo mas </a>
-    <a  class='nav-admin' href='session_closed.php'>Cerrar sesión </a>
-<nav>
-
-   
-
+    <div class='container_client'>
+        <div class='right'>
+        <a  class='nav-admin' href='users.php'> Usuarios </a>
+        </div>
+        <div class='right'>
+        <a  class='nav-admin' href='rooms.php'> Habitaciones</a>
+        </div>
+        <div class='right'>
+        <a  class='nav-admin' href='booking.php'> Reservas </a>
+        </div>
+        <div class='right'>
+        <a  class='nav-admin' href='session_closed.php'>Cerrar sesión </a>
+        </div>
+        
+    </div>
+</div>
 <body>
 </HTML>
+
+
+    
+    
+    
+    
+    

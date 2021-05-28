@@ -1,5 +1,5 @@
 <?php
-
+include 'header.php';
 session_start();
 
     if(!isset($_SESSION['roles'])){
@@ -9,12 +9,14 @@ session_start();
         header('location:login.php');
         }
     }
-
+ 
 ?>
 <!DOCTYPE HTML>
 <head>
 <title>cliente</title>
 <link href="sass/client.css" rel="stylesheet" type="text/css">
+<link href="sass/header.css" rel="stylesheet" type="text/css">
+<link href="sass/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class='container_user'>
@@ -31,6 +33,7 @@ session_start();
         </div>
         <div class='right'>
         <a href='session_closed.php'>Cerrar sesión </a>
+        </div>
     </div>
 </div>
 </body>
