@@ -1,13 +1,39 @@
-.container_rooms {
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img/panoramica_hotel.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body h1, body h2 {
+  text-align: center;
+  text-justify: center;
+  letter-spacing: 2px;
+  font-family: 'Mate SC', serif;
+  margin-bottom: 20px;
+  color: white;
+}
+
+body .container_rooms {
+  height: 75vh;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #8a8784;
 }
 
-.container_rooms .room1 {
+body .container_rooms .room1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,9 +44,10 @@
       -ms-flex-pack: center;
           justify-content: center;
   border: solid black;
+  border-radius: 10px;
 }
 
-.container_rooms .room2 {
+body .container_rooms .room1 .login_form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,10 +57,65 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid black;
 }
 
-.container_rooms .room3 {
+body .container_rooms .room1 .login_form .individual h2 {
+  border: solid black 1px;
+}
+
+body .container_rooms .room1 .login_form form {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container_rooms .room1 .login_form h3, body .container_rooms .room1 .login_form h1, body .container_rooms .room1 .login_form p, body .container_rooms .room1 .login_form h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+}
+
+body .container_rooms .room1 .login_form h1, body .container_rooms .room1 .login_form h3, body .container_rooms .room1 .login_form p, body .container_rooms .room1 .login_form h2 {
+  letter-spacing: 2px;
+  font-family: 'Mate SC', serif;
+}
+
+body .container_rooms .room1 .login_form p {
+  margin-bottom: -10px;
+}
+
+body .container_rooms .room1 .login_form input[type='text'], body .container_rooms .room1 .login_form input[type='password'], body .container_rooms .room1 .login_form input[type='date'], body .container_rooms .room1 .login_form input[type='number'] {
+  outline: none;
+  margin: 15px;
+  margin-left: 30vh;
+  border-radius: 7px;
+  border: 1px solid black;
+  display: block;
+  padding: 10px;
+  width: 250px;
+}
+
+body .container_rooms .room1 .login_form input[type='submit'] {
+  padding: 10px;
+  width: 150px;
+  color: white;
+  background-color: #4fb671;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 35vh;
+  margin-bottom: 30px;
+}
+
+body .container_rooms .room1 .login_form input[type='submit']:hover {
+  background-color: #e45c5c;
+}
+
+body .container_rooms .room1 .login_form .button_registrate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,6 +125,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+body .container_rooms .room1 .login_form .button_registrate a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+  margin: 15px;
+  border-radius: 7px;
+  border: 1px solid black;
+  display: block;
+  padding: 10px;
+  background-color: #e45c5c;
+}
+
+body .container_rooms .room1 .login_form .button_registrate a:hover {
+  background-color: #5da58f;
 }
 /*# sourceMappingURL=form_reservation.css.map */
