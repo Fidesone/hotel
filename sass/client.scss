@@ -11,16 +11,20 @@ body{
     background-repeat: no-repeat;
     
     .container_user{
+        
         display: block;
         align-items: center;
         justify-content: center;
         height: 80vh;
         width: 100vh;
         .user{
-            background-color: rgb(155, 76, 76);
+            background-color: rgb(236, 74, 74);
             color:white;
             text-align: center;
             border-radius: 5px;
+            letter-spacing: 5px;
+            font-family: 'Mate SC', serif;
+            margin-top: 5vh;
             
         }
 
@@ -28,6 +32,7 @@ body{
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 5vh;
             
            
             .left{
@@ -38,14 +43,27 @@ body{
                 height: 100px;
                 width: 100%;
                 opacity: 0.9;
-                background-color: rgb(87, 161, 221);
+                background-color: rgb(87, 173, 120);
                 border: solid black 1px;
-                border-radius: 5px;
+                border-radius: 10px;
                 a{
+                    font-size: 1.2em;
+                    letter-spacing: 5px;
+                    font-family: 'Mate SC', serif;
                     text-decoration: none;
                     color: white;
                 }
+                a:hover{
+                    color: black;
+                    font-size: 1.5rem;
+                }
+                
         
+            }
+            .left:hover{
+                background-color: rgb(76, 126, 190);
+                color: black;
+                font-size: 1.5;
             }
         
             .right{
@@ -56,13 +74,26 @@ body{
                 height: 100px;
                 width: 100%;
                 opacity: 0.9;
-                background-color: rgb(87, 173, 120);
+                background-color: rgb(189, 187, 76);
                 border: solid black 1px;
-                border-radius: 5px;
+                border-radius: 10px;
                 a{
+                    font-size: 1.2rem;
+                    letter-spacing: 5px;
+                    font-family: 'Mate SC', serif;
                     text-decoration: none;
                     color: white;
                 }
+                a:hover{
+                    color: black;
+                    font-size: 1.5rem;
+                }
+
+                
+            }
+            .right:hover{
+                background-color:  rgb(76, 126, 190);
+                
             }
         
         }

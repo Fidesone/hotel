@@ -19,6 +19,7 @@ body {
 }
 
 body .container_user {
+  margin-top: 10vh;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -30,11 +31,30 @@ body .container_user {
   width: 100vh;
 }
 
+body .container_user h2 {
+  color: white;
+  margin-top: 5vh;
+  text-align: center;
+  background-color: cornflowerblue;
+  letter-spacing: 5px;
+  font-family: 'Mate SC', serif;
+}
+
+body .container_user h3 {
+  color: white;
+  text-align: center;
+  background-color: cornflowerblue;
+  letter-spacing: 5px;
+  font-family: 'Mate SC', serif;
+}
+
 body .container_user .user {
-  background-color: #9b4c4c;
   color: white;
   text-align: center;
   border-radius: 5px;
+  background-color: #ec4a4a;
+  letter-spacing: 5px;
+  font-family: 'Mate SC', serif;
 }
 
 body .container_user .container_client {
@@ -48,11 +68,12 @@ body .container_user .container_client {
 }
 
 body .container_user .container_client .right {
+  margin-top: 15px;
   text-align: center;
   text-justify: center;
-  margin: 10px;
+  padding-top: 20px;
   display: block;
-  height: 100px;
+  height: 50px;
   width: 100%;
   opacity: 0.9;
   background-color: #57ad78;
@@ -62,12 +83,51 @@ body .container_user .container_client .right {
 }
 
 body .container_user .container_client .right a {
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-justify: center;
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  font-family: 'Mate SC', serif;
+}
+
+body .container_user .container_client .right a:hover {
+  color: black;
+  font-size: 1.7rem;
+}
+
+body .container_user .container_client .right:hover {
+  background-color: #4c7ebe;
+}
+
+body .container_user .container_client .right_1 {
+  margin-top: 15px;
+  text-align: center;
+  text-justify: center;
+  padding-top: 20px;
+  display: block;
+  height: 50px;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #bdbb4c;
+  border: solid black 1px;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+body .container_user .container_client .right_1 a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 5px;
+  font-family: 'Mate SC', serif;
+}
+
+body .container_user .container_client .right_1 a:hover {
+  color: black;
+  font-size: 1.7rem;
+}
+
+body .container_user .container_client .right_1:hover {
+  background-color: #4c7ebe;
 }
 /*# sourceMappingURL=admin.css.map */

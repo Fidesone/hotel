@@ -11,16 +11,38 @@ body{
     background-repeat: no-repeat;
     
     .container_user{
+        margin-top: 10vh;
         display: block;
         align-items: center;
         justify-content: center;
         height: 80vh;
         width: 100vh;
+        
+        h2{
+            color: white;
+            margin-top: 5vh;
+            text-align: center;
+            background-color: cornflowerblue;
+            letter-spacing: 5px;
+            font-family: 'Mate SC', serif;
+            
+        }
+        h3{
+            color: white;
+            text-align: center;
+            background-color: cornflowerblue;
+            letter-spacing: 5px;
+            font-family: 'Mate SC', serif;
+        }
+
         .user{
-            background-color: rgb(155, 76, 76);
+            
             color:white;
             text-align: center;
             border-radius: 5px;
+            background-color: rgb(236, 74, 74);
+            letter-spacing: 5px;
+            font-family: 'Mate SC', serif;
             
         }
 
@@ -30,11 +52,12 @@ body{
             justify-content: center;
             
             .right{
+                margin-top: 15px;
                 text-align: center;
                 text-justify: center;
-                margin: 10px;
+                padding-top: 20px;
                 display:block;
-                height: 100px;
+                height: 50px;
                 width: 100%;
                 opacity: 0.9;
                 background-color: rgb(87, 173, 120);
@@ -42,12 +65,51 @@ body{
                 border-radius: 10px;
                 opacity: 0.9;
                 a{
-                    text-align: center;
-                    justify-content: center;
-                    text-justify: center;
                     text-decoration: none;
                     color: white;
+                    font-size: 1.5rem;
+                    letter-spacing: 5px;
+                    font-family: 'Mate SC', serif;
+                    
                 }
+                a:hover{
+                    color: black;
+                    font-size: 1.7rem;
+                }
+            }
+            .right:hover{
+                background-color: rgb(76, 126, 190);
+                
+            }
+
+            .right_1{
+                margin-top: 15px;
+                text-align: center;
+                text-justify: center;
+                padding-top: 20px;
+                display:block;
+                height: 50px;
+                width: 100%;
+                opacity: 0.9;
+                background-color: rgb(189, 187, 76);
+                border: solid black 1px;
+                border-radius: 10px;
+                opacity: 0.9;
+                a{
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 5px;
+                    font-family: 'Mate SC', serif;
+                    
+                }
+                a:hover{
+                    color: black;
+                    font-size: 1.7rem;
+                }
+            }
+            .right_1:hover{
+                background-color: rgb(76, 126, 190);
             }
         
         }

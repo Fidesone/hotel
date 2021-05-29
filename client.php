@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+
 session_start();
 
     if(!isset($_SESSION['roles'])){
@@ -13,7 +13,9 @@ session_start();
 ?>
 <!DOCTYPE HTML>
 <head>
-<title>cliente</title>
+<title>Haz tu reserva</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 <link href="sass/client.css" rel="stylesheet" type="text/css">
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/footer.css" rel="stylesheet" type="text/css">
