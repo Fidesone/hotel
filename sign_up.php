@@ -64,7 +64,7 @@ include 'header.php';
     if($_SERVER['REQUEST_METHOD']=='POST')
     if (!empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
-        $query = "INSERT INTO usuarios(nombre, apellido,  email, password)VALUES (:nombre , :apellido,  :email, :password)";
+        $query = "INSERT INTO usuarios(nombre, apellido,  email, password) VALUES (:nombre , :apellido,  :email, :password)";
         $stmt = $conn->prepare($query);
         $stmt->bindParam(':nombre', $_POST['nombre']);
         $stmt->bindParam(':apellido', $_POST['apellido']);
