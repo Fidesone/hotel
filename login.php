@@ -6,7 +6,6 @@
  
 
  session_start(); // Inicia una nueva sesión
-
  // Redirige según seas un cliente o un administrador
  if (isset($_SESSION['roles'])){
      switch($_SESSION['roles']){

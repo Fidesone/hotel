@@ -2,7 +2,7 @@
 
 <?php
 
-// echo "Esto es el Header" . "<br>";
+
 
 
 ?>
@@ -26,7 +26,11 @@
             <a  class='nav-link' href='https://github.com/Fidesone/hotel'>
                 <img src='img/github.png'></img> 
             </a>
+<<<<<<< HEAD
             <a  class='nav-link' href='tel:123456789'> Teléfono: 123456789</a>
+=======
+            <a  class='nav-link' href='tel:123456789'> Telefono: 123456789</a>
+>>>>>>> 8d74b3f81631f7a38817bda262f791fcc0a252a8
             </nav>
         </div>
     </div>  

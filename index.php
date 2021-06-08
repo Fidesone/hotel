@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <?php
-
 include_once 'connection.php';
-// $conn=connect();
-// echo "La conexión ha sido exitosa" . "<br>";
+// echo "La conexión ha sido exitosa";
 include 'header.php';
-
-
 ?>
 <head>
+<title>Hotel Monturiel</title>
+<link rel="icon" href="img/h_logo.png" type="image/png" >
 <link href="sass/footer.css" rel="stylesheet" type="text/css">
 <link href="sass/header.css" rel="stylesheet" type="text/css">
 <link href="sass/sign_up.css" rel="stylesheet" type="text/css">
