@@ -3,6 +3,7 @@ body{
     height: 100vh;
     width: 100%;
     background-image: url("../img/panoramica_hotel.jpg");
+    background-attachment:fixed;
     
     display: flex;
     align-items:center;
@@ -23,9 +24,10 @@ body{
     display:inline-block;
     align-items:center;
     justify-content:space-around;
-     background-color:rgb(138, 135, 132);
+     
 
     .room1{
+        background-color:rgb(138, 135, 132);
         display:flex;
         align-items: center;
         justify-content: center;
@@ -49,6 +51,9 @@ body{
                 justify-content: center;
 
             }
+            form *{
+                width: 100%;
+            }
             h3, h1, p, h2{
                 margin-top:20px ;
                 margin-bottom: 10px;
@@ -67,8 +72,8 @@ body{
         
             input[type='text'], input[type='password'],input[type='date'],input[type='number']{
                 outline:none;
-                margin: 15px;
-                margin-left:30vh;
+                margin: 15px auto;
+                //margin-left:30vh;
                 border-radius: 7px;
                 border: 1px solid black;
                 display: block;
@@ -76,14 +81,15 @@ body{
                 width:250px;
             }
             input[type='submit']{
+                display: block;
                 padding: 10px;
                 width: 150px;
                 color: white;
                 background-color: rgb(79, 182, 113);
                 border-radius:5px;
                 cursor:pointer;
-                margin-left:35vh;
-                margin-bottom: 30px;
+                //margin-left:35vh;
+                margin: 15px auto;
                 
             }
             input[type='submit']:hover{

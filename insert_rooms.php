@@ -4,14 +4,14 @@
     
 
  //query
- if (!empty($_POST['num_habitacion']) && !empty($_POST['num_camas']) && !empty($_POST['precio']) && !empty($_POST['id_tipo'])) {
+ if (!empty($_POST['id_habitacion']) && !empty($_POST['num_camas']) && !empty($_POST['precio']) && !empty($_POST['nombre'])) {
 
-    $query = "INSERT INTO habitacion( num_habitacion, num_camas,  precio, id_tipo )VALUES (:num_habitacion , :num_camas,  :precio, :id_tipo)";
+    $query = "INSERT INTO habitacion( id_habitacion, num_camas,  precio, nombre )VALUES (:id_habitacion , :num_camas,  :precio, :nombre)";
     $stmt = $conn->prepare($query);
-    $stmt->bindParam(':num_habitacion', $_POST['num_habitacion']);
+    $stmt->bindParam(':id_habitacion', $_POST['id_habitacion']);
     $stmt->bindParam(':num_camas', $_POST['num_camas']);
     $stmt->bindParam(':precio', $_POST['precio']);
-    $stmt->bindParam(':id_tipo', $_POST['id_tipo']);
+    $stmt->bindParam(':nombre', $_POST['nombre']);
 
     if($stmt->execute()){
         echo '<script language="javascript">alert("Habitación actualizada correctamente");</script>';
@@ -29,5 +29,9 @@
     
 } else echo 'Por favor, complete todos los campos';
  
+echo $_POST['id_habitacion'];
+echo $_POST['num_camas'];
+echo $_POST['precio'];
+echo $_POST['id_tipo'];
 
 ?>

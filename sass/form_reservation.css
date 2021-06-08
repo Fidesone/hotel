@@ -2,6 +2,7 @@ body {
   height: 100vh;
   width: 100%;
   background-image: url("../img/panoramica_hotel.jpg");
+  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,10 +31,10 @@ body .container_rooms {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #8a8784;
 }
 
 body .container_rooms .room1 {
+  background-color: #8a8784;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +74,10 @@ body .container_rooms .room1 .login_form form {
           justify-content: center;
 }
 
+body .container_rooms .room1 .login_form form * {
+  width: 100%;
+}
+
 body .container_rooms .room1 .login_form h3, body .container_rooms .room1 .login_form h1, body .container_rooms .room1 .login_form p, body .container_rooms .room1 .login_form h2 {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -91,8 +96,7 @@ body .container_rooms .room1 .login_form p {
 
 body .container_rooms .room1 .login_form input[type='text'], body .container_rooms .room1 .login_form input[type='password'], body .container_rooms .room1 .login_form input[type='date'], body .container_rooms .room1 .login_form input[type='number'] {
   outline: none;
-  margin: 15px;
-  margin-left: 30vh;
+  margin: 15px auto;
   border-radius: 7px;
   border: 1px solid black;
   display: block;
@@ -101,14 +105,14 @@ body .container_rooms .room1 .login_form input[type='text'], body .container_roo
 }
 
 body .container_rooms .room1 .login_form input[type='submit'] {
+  display: block;
   padding: 10px;
   width: 150px;
   color: white;
   background-color: #4fb671;
   border-radius: 5px;
   cursor: pointer;
-  margin-left: 35vh;
-  margin-bottom: 30px;
+  margin: 15px auto;
 }
 
 body .container_rooms .room1 .login_form input[type='submit']:hover {

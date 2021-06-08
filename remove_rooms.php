@@ -5,7 +5,7 @@ $id = $_GET['upd'];
 echo $id;
 echo "<script> alert( . '$id'. );</script>";
 //query
-$query = "DELETE FROM usuarios WHERE id = ". $id;
+$query = "DELETE FROM habitacion WHERE id_habitacion = ". $id;
 
 $res = $conn->prepare($query);
 

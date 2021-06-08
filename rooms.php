@@ -31,10 +31,10 @@
      </div>
     <form action="insert_rooms.php" method="post" class="container_form">
     <h2 class="container_newuser">Registrar una nueva habitación</h2>
-        <input type="number" name='num_habitacion' placeholder='Número de habitación'> <br><br>
+        <input type="number" name='id_habitacion' placeholder='Número de habitación'> <br><br>
         <input type="number" name='num_camas' placeholder='Número de camas'> <br><br>
         <input type="number" name='precio' placeholder='Precio'> <br><br>
-        <input type="number" name='id_tipo' placeholder='id_tipo'> <br><br>
+        <input type="text" name='nombre' placeholder='id_tipo'> <br><br>
         <input type="submit" name='registrar'>
     </form> 
 
@@ -64,7 +64,7 @@
             <td><?php echo $row['precio'] ?></td>
             <td><?php echo $row['nombre'] ?></td>
             <td><a href="rooms_update.php?upd=<?php echo $row['id_habitacion']; ?>">Editar</a></td>
-            <td><a href="remove.php?upd=<?php echo $row['id_habitacion']; ?>"class="item_link">Eliminar</a></td>
+            <td><a href="remove_rooms.php?upd=<?php echo $row['id_habitacion']; ?>"class="item_link">Eliminar</a></td>
         </tr>
 
     <?php

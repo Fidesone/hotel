@@ -1,6 +1,6 @@
 
 function confirmation(e){
-    if (confirm("¿Seguro que quiere eliminar el usuario?")){
+    if (confirm("¿Seguro que quiere eliminar este registro")){
         return true;
     } else { e.preventDefault()}; // e.preventDefault(). Cancela el evento sin detener el resto del funcionamiento, puede ser llamado nuevamente.
     
